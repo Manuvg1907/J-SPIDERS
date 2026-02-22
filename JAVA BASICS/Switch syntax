@@ -1,0 +1,22 @@
+class switch{
+
+public static void main (String [] args){
+
+System.out.println("Switch example");
+
+Switch(cond){
+case value: break // break is to stop the execution after executing and encountering the break statement 
+
+case value:
+
+case value:// break is optional 
+
+case value :
+ 
+
+default:
+system.out.println("invalid values entered then it will execute");
+
+}
+
+}
