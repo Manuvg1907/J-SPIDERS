@@ -1,1 +1,24 @@
+class Staticvar 
+{
+	
+	static int a;
+	static String m;  //default value is null
+	static byte b;
+	 static double d;
+	 
+	public static void main(String[] args) 
+	{
+		
+		Staticvar obj1= new Staticvar();
+		System.out.println(a);//0
+		System.out.println(b);//0
+		System.out.println(m);//null
+		System.out.println(d);//0.0
+		System.out.println(Staticvar.a);
+		
+		System.out.println(obj1);
+	}
+}
+//satic var can be refered by either directly and aslo by the class name.VarName
 
+//satic variable can be reffered by creating an object of the class and wich saves the adress of the static variable.
