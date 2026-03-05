@@ -1,1 +1,31 @@
-m
+class Company {
+
+int Company_No;
+String Company_Name;
+
+
+public Company (int No, String Name){
+
+Company_No = No;
+Company_Name = Name;
+
+System.out.println("This is to show constructor is being called "); //optional for user visibility 
+
+
+}
+ void display(){
+
+System.out.println(Company_No+" "+Company_Name);
+
+}
+
+Public static void main (String[] args){
+
+Company C1 = new Company(1,"Google");
+
+C1.display();
+
+}
+
+}
+
