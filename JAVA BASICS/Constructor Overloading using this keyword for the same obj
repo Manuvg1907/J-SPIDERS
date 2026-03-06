@@ -10,6 +10,28 @@ System.out.println("0 arguments constructor called");
 car(int i){
 this();  
 
-   // to Overload the same class constructor we can use the this keyword it will call the other 0 arguments constructor 
+
+//this keyword always has to pass as the 1st statement in the constructor to call other 
+
+
+
+   // to Overload the same class constructor we can use the this keyword it will call the other 0 arguments constructor and run 
+
+
 CarNum = i;
 
+System.out.println("1 arguments constructor"+ CarNum);
+
+}
+
+class test1{
+
+public static void main (String [] args){
+
+car C1 = new car(10);
+
+}
+
+}
+
+//for this C1(one) object both the constructor are called and both codes will be executed 
