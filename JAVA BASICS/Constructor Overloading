@@ -1,1 +1,40 @@
-m
+class bike{
+
+int bikeNum;
+String bikeName;
+
+bike(){
+System.out.println("zero arguments constructor");
+}
+
+bike(int i){
+
+bikeNum = i;
+
+System.out.println("1 arguments constructor");
+}
+
+bike(int i , String j){
+
+bikeNum = i;
+bikeName = j;
+
+System.out.println("2 arguments constructor");
+}
+
+}
+
+class test{
+
+public static void main (String[] args){
+
+test b1 = new test();
+ 
+test b2 = new test();
+
+test b3 = new test();
+
+}
+}
+
+
