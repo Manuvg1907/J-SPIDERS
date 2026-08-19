@@ -1,1 +1,46 @@
-h
+// 1. Nested address class
+class Address {
+    String city;
+    public Address(String city) { this.city = city; }
+}
+
+// 2. Main class implementing Cloneable
+class Employee implements Cloneable {
+    String name;
+    Address address; // Object reference
+
+    public Employee(String name, Address address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    // Overriding clone method
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        // Step A: Performs default shallow copy
+        Employee clonedEmp = (Employee) super.clone();
+        
+        // Step B: Manual Deep Copy (Uncomment this to protect the original object!)
+        // clonedEmp.address = new Address(this.address.city);
+        
+        return clonedEmp;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Address sharedAddress = new Address("New York");
+        Employee emp1 = new Employee("Alice", sharedAddress);
+
+        // Cloning the employee
+        Employee emp2 = (Employee) emp1.clone();
+        emp2.name = "Bob"; 
+        
+        // Changing the cloned employee's city
+        emp2.address.city = "London";
+
+        // Let's see what happened to Alice's city because of Shallow Copy...
+        System.out.println("Emp 1 Name: " + emp1.name + ", City: " + emp1.address.city);
+        System.out.println("Emp 2 Name: " + emp2.name + ", City: " + emp2.address.city);
+    }
+}
