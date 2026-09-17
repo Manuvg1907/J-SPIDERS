@@ -1,3 +1,20 @@
 
 The Process of hiding the complex implementation from the user and providing
 the necessary functionality to the user is known as Abstraction
+
+
+Real World Example
+
+Braking Mechanism of the Car only necessary functionality is provided to the user to apply the brake 
+
+how it works internally when we apply the brake all the complex implementtion is hidden from the user 
+this is what the example of Abstraction
+
+
+In Java Abstraction can be achieved in 2 ways 
+
+//   partial abstraction can be achieved using the method overriding 
+
+
+1. using Abstract class we can provide the astraction to the parent class methods and new implementation will be provided in the child class 
+and given with the reference of the parent (at runtime it will execute the child class overriden method (but if someone from middleware try to see the implementation then it will show the abstract method ))
