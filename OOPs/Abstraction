@@ -1,1 +1,3 @@
 
+The Process of hiding the complex implementation from the user and providing
+the necessary functionality to the user is known as Abstraction
